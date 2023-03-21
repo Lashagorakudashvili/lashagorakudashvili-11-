@@ -11,13 +11,18 @@
 
 html,
 body {
-    max-width: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    
 }
 
-.d-flex {
+.container {
+    width: 1080px;
+    width: 100%;
+    margin: auto;
+}
+
+.header-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -25,11 +30,7 @@ body {
     gap: 10px;
 }
 
-h2 {
-    font-size: 70px;
-}
-
-.map {
+/*.map {
     max-width: 800px;
     width: 50%;
 }
@@ -47,17 +48,17 @@ iframe {
 
 .contact>* {
     margin-bottom: 10px;
-}
+}*/
 
-.d-grid {
+.header-grid {
     margin: 50px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
-.card {
-    /* max-width: 300px; */
+/*.card {
+    /* max-width: 300px;*
     width: 100%;
     height: 150px;
     background-color: red;
@@ -86,7 +87,7 @@ iframe {
 .map {
     grid-area: map;
     width: 100%;
-}
+}*/
 
 /* 1200 */
 /* 1024 */
@@ -95,8 +96,8 @@ iframe {
 /* max-width*/
 /* min-width */
 
-/*768px <= width <= 1024px 
-@media (width <=1024px) {
+/* 768px <= width <= 1024px */
+/*@media (width <=1024px) {
     .d-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -105,7 +106,7 @@ iframe {
         justify-content: center;
     }
 
-    .card {
+    /* .card {
 		background-color: blue;
 	}
     h2 {
@@ -122,8 +123,12 @@ iframe {
 }*/
 
 @media (width <=768px) {
-    .d-grid {
+    .header-grid {
         grid-template-columns: 1fr;
+    }
+
+    html, body {
+        width: 100% !important;
     }
 
     .background-color {
@@ -132,12 +137,14 @@ iframe {
         padding: 60px;
         align-items: center;
         padding-bottom: 80px;
+        margin-left: -100px;
+        width: 768px;
     }
 
     .logo {
         align-items: center;
         margin: auto;
-        margin-left: 37px;
+        margin-left: 140px;
         margin-top: -30px;
         width: 120px;
     }
@@ -145,22 +152,25 @@ iframe {
     .building-img {
         width: 100%;
         max-width: 390px;
-        width: 270px;
+        width: 350px;
         margin: auto;
-        margin-left: 20px;
+        margin-left: -20px;
         border-radius: 15px;
-        height: 170px;
+        height: 210px;
         margin-top: -50px;
+        object-fit: cover;
+        display: block;
     }
 
     .why {
         max-width: 390px;
-        width: 250px;
+        width: 320px;
         margin: auto;
-        margin-left: 25px;
+        margin-left: -15px;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
-        font-size: 17px;
+        font-size: 20px;
+        margin-top: 15px;
     }
 
     .grid-container {
@@ -169,26 +179,32 @@ iframe {
         position: absolute;
         grid-gap: 5px;
         margin: auto;
-        margin-left: 20px;
-        margin-top: 10px;
-        
+        margin-left: -15px;
+        margin-top: 35px;
     }
 
     .grid-item {
         width: 100%;
-        width: 135px;
+        width: 168px;
         text-align: center;
-        height: 85px;
+        height: 95px;
         object-fit: cover;
         display: block;
         border-radius: 10px;
     }
 
     .fame {
-        max-width: 270px;
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 350px;
+        font-size: 20px;
+        width: 340px !important;
         margin: auto;
-        margin-left: 20px;
-        margin-top: 210px
+        margin-left: -15px;
+        margin-top: 260px;
+    }
+
+    .header  {
+        margin-left: 40px;
     }
 
 
@@ -196,11 +212,9 @@ iframe {
 
 
 
+}
 
-
-
-
-    .card:nth-child(n + 5) {
+    /*.card:nth-child(n + 5) {
         display: none;
     }
 
@@ -225,3 +239,4 @@ iframe {
         background-color: darkorchid;
     }
 }
+*/
